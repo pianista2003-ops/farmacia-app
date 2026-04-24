@@ -123,8 +123,8 @@ git commit -m "mi app"
                 <div className="flex items-center gap-3">
                   <span className="text-green-700">€{item.price}</span>
                   <button
-                    variant="destructive"
                     onClick={() => removeFromCart(index)}
+                    className="bg-red-500 text-white px-3 py-1 rounded"
                   >
                     Eliminar
                   </button>
