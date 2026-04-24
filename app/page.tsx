@@ -47,7 +47,7 @@ export default function PharmacyApp() {
     setCart([...cart, product]);
   };
 
-  const removeFromCart = (index) => {
+  const removeFromCart = (index: number) => {
     const newCart = [...cart];
     newCart.splice(index, 1);
     setCart(newCart);
