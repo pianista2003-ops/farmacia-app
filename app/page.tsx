@@ -43,7 +43,7 @@ export default function PharmacyApp() {
   const [cart, setCart] = useState([]);
   const [search, setSearch] = useState("");
 
-  const addToCart = (product) => {
+  const addToCart = (product: any) => {
     setCart([...cart, product]);
   };
 
@@ -64,7 +64,8 @@ export default function PharmacyApp() {
       <header className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-green-700">Farmacia Online</h1>
         <div className="flex items-center gap-2 text-green-700">
-          <span>🛒</span>
+          <span>🛒</span>git add .
+git commit -m "mi app"
           <span>{cart.length}</span>
         </div>
       </header>
@@ -82,7 +83,7 @@ export default function PharmacyApp() {
 
       {/* Productos */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {filteredProducts.map((product) => (
+        {filteredProducts.map((product: any) => (
           <div key={product.id} className="rounded-2xl shadow bg-white">
             <div className="p-4">
               <img
@@ -113,7 +114,7 @@ export default function PharmacyApp() {
           <p className="text-gray-500">El carrito está vacío</p>
         ) : (
           <div className="space-y-3">
-            {cart.map((item, index) => (
+            {cart.map((item: any, index. any) => (
               <div
                 key={index}
                 className="flex justify-between items-center bg-white p-3 rounded-xl shadow"
