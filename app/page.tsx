@@ -114,7 +114,7 @@ git commit -m "mi app"
           <p className="text-gray-500">El carrito está vacío</p>
         ) : (
           <div className="space-y-3">
-            {cart.map((item: any, index. any) => (
+            {cart.map((item: any, index: any) => (
               <div
                 key={index}
                 className="flex justify-between items-center bg-white p-3 rounded-xl shadow"
