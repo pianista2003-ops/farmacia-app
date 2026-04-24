@@ -40,7 +40,7 @@ const productsData = [
 ];
 
 export default function PharmacyApp() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<any[]>([]);
   const [search, setSearch] = useState("");
 
   const addToCart = (product: any) => {
